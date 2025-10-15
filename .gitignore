@@ -19,11 +19,13 @@ backup_configs/
 wallpaper_effects/.wallpaper_current
 .current_wallpaper
 
-# Generated color schemes (optional - may want to keep)
-# Uncomment if you don't want to track generated colors
-# wallust/*.css
-# wallust/*.json
-# wallust/*.rasi
+# Generated color schemes (dynamic files)
+wallust/*.css
+wallust/*.json
+wallust/*.rasi
+waybar/wallust/
+rofi/wallust/
+swaync/wallust/
 
 # Personal wallpapers (too large for git)
 # Users should add their own wallpapers
@@ -70,3 +72,16 @@ packages.txt.bak
 DEPENDENCIES.md.bak
 wallust/wallust-hyprland.conf
 wallpaper_effects/.wallpaper_current
+
+# Images and icons (too large for git)
+*.png
+*.jpg
+*.jpeg
+*.gif
+# Keep SVG icons for UI (they're usually small)
+# *.svg
+
+# Symlinks to current configs
+waybar/config
+waybar/style.css
+rofi/.current_wallpaper
