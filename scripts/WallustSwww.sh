@@ -32,8 +32,8 @@ fi
 
 # Check the flag before executing further commands
 if [ "$ln_success" = true ]; then
-    # execute wallust
+    # execute wallust with automatic light/dark detection
 	echo 'about to execute wallust'
-    # execute wallust skipping tty and terminal changes
-    wallust run "$wallpaper_path" -s &
+    # Use WallustAuto.sh which detects brightness and applies appropriate palette
+    "$HOME/.config/hypr/UserScripts/WallustAuto.sh" "$wallpaper_path" &
 fi
